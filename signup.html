@@ -38,9 +38,14 @@
                 <input type="password" id="user_confirm_password" name="user_confirm_password" required>
             </div><br><br>
             <div>
-               <input type="submit" value="Submit">
+               <button type="submit" value="Submit">
             </div>
         </form>
+        <style>
+            input:focus:invalid {
+                border: 2px solid red;
+            }
+        </style>
     </main>
     <footer>
         <p>Copyright Little Lemon</p>
