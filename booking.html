@@ -32,21 +32,37 @@
         <form method="POST">
             <div>
                 <label for="booking_date">Booking Date</label>
+                <input type="date" name="booking_date" id="booking_date">
             </div>
+            <div>
+                <label for="booking_people">Number of People</label>
+                <input type="range" name="booking_people" id="booking_people" min="1" max="10" value="4"
+                    oninput="this.nextElementSibling.value=this.value">
+                <output>4</output>
+            </div>
+            <div>
+                <label for="booking_location">Location</label>
+                <input name="booking_location" id="booking_location" list="locations">
+                <datalist id="locations">
+                    <option value="Indoors">
+                    <option value="Outdoors">
+                </datalist>
+            </div>
+            <input type="reset" value="reset">
             <!-- <fieldset id="size"> -->
-                 <!-- Wrapping radio buttons inside label tags for easier selection on mobile touch devices -->
-                <!-- <label><input type="radio" value="2" name="size"> 2-person table</label>
+            <!-- Wrapping radio buttons inside label tags for easier selection on mobile touch devices -->
+            <!-- <label><input type="radio" value="2" name="size"> 2-person table</label>
                 <label><input type="radio" value="4" name="size" checked> 4-person table</label>
                 <label><input type="radio" value="6" name="size"> 6-person table</label>
             </fieldset> -->
             <!-- <fieldset id="location"> -->
-                <!-- Wrapping radio buttons inside label tags for easier selection on mobile touch devices -->
-                <!-- <label><input type="radio" value="indoors" name="location" checked> Indoors</label>
+            <!-- Wrapping radio buttons inside label tags for easier selection on mobile touch devices -->
+            <!-- <label><input type="radio" value="indoors" name="location" checked> Indoors</label>
                 <label><input type="radio" value="outdoors" name="location"> Outdoors</label>
             </fieldset> -->
             <br><br>
             <div>
-               <button type="submit">Submit</button>
+                <button type="submit">Submit</button>
             </div>
             <form>
     </main>
