@@ -30,9 +30,9 @@
     <main>
         <h1>Book a Table</h1>
         <form method="POST">
-            <div>
-                <label for="booking_date">Booking Date</label>
-                <input type="date" name="booking_date" id="booking_date">
+
+            <label for="booking_date">Booking Date</label>
+            <input type="date" name="booking_date" id="booking_date">
             </div>
             <div>
                 <label for="booking_people">Number of People</label>
@@ -48,7 +48,16 @@
                     <option value="Outdoors">
                 </datalist>
             </div>
-            <input type="reset" value="reset">
+            <div><label for="booking_email">Mail:</label><input type="email" name="booking_email"
+                    id="booking_email"></label></div>
+            <div><label for="booking_date">Date:</label><input type="date" name="booking_date"
+                    id="booking_date"></label></div>
+            <!-- <div><label for="booking_number_of_people">Number of People:</label><input type="number"
+                    name="booking_number_of_people" id="booking_number_of_people"></label></div> -->
+            <div><label for="agree_policy">I agree to the cancellation policy</label><input type="checkbox"
+                    name="booking_policy" id="booking_policy"></label></div>
+            <input type="submit" value="Book Now">
+            <input type="reset" value="Reset">
             <!-- <fieldset id="size"> -->
             <!-- Wrapping radio buttons inside label tags for easier selection on mobile touch devices -->
             <!-- <label><input type="radio" value="2" name="size"> 2-person table</label>
@@ -60,10 +69,6 @@
             <!-- <label><input type="radio" value="indoors" name="location" checked> Indoors</label>
                 <label><input type="radio" value="outdoors" name="location"> Outdoors</label>
             </fieldset> -->
-            <br><br>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
             <form>
     </main>
     <footer>
