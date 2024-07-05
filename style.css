@@ -1,59 +1,45 @@
 body {
-    background-color: #E0E0E2;
+    background-color: #EDEFEE;
+    font-family: 'Markazi Text', serif;
+    margin: 3rem 5%;
 }
 
-ul {
-    list-style-type: none;
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+
+}
+
+nav ul {
+    list-style: none;
     text-align: center;
-    padding: 0px;
 }
 
-li {
+nav li {
     display: inline;
 }
 
-main {
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-}
-
-h1 {
-    color: #721817;
-}
-
-h2 {
-    color: #721817;
-}
-
-.center-text {
-    text-align: center;
-}
-
-img {
+header > img{
+    margin: 0 auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-h2 > span {
-    color: #FA9F42;
-    font-size: 0.75em;
+section{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-form > div {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+article{
+    flex: 1;
 }
 
-#copyright {
-    padding-top: 12px;
-    font-size: 0.75em;
+footer{
+    display: flex;  
 }
 
-input:focus:invalid {
-    color: red;
-    border: red 3px solid;
+footer div{
+    flex: 1;
 }
