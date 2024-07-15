@@ -19,7 +19,7 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
 }
 
 header > img{
