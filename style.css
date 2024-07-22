@@ -20,11 +20,6 @@ nav ul {
     padding: 0;
 }
 
-#main_promotion_section{
-    border-radius: 10px;
-    background-color: rgba(31, 59, 14, 0.527);
-}
-
 nav a{
     font-size: larger;
     text-decoration: double;
@@ -35,12 +30,12 @@ nav a{
 }
 
 nav{
-    background-color: rgba(31, 59, 14, 0.527);
+    background-color: #495E57;
     display:flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 nav li {
@@ -56,14 +51,48 @@ header > img{
     margin: 0 auto;
     display: block;
 }
+#main_promotion_section article{
+    background-image: url('resources/photo-1547496502-affa22d38842.avif');
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+}
 
 section{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+#risotto_article{
+    background-image: url('resources/risotto-al-nero-3092x1546.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+#fruit_article{
+    background-image: url('resources/pngtree-a-colorful-fruit-salad-with-slices-of-watermelon-strawberries-kiwi-and-image_2702404.jpg');
+    background-position: center;
+}
+
+#tuscany_article{
+    background-image: url('resources/Cucina_Toscana_Ribollita_mjoizj\ \(1\).jpg');
+    background-position: right;
+    background-size: cover;
+
 }
 
 article{
     flex: 1;
+    padding:0.5rem 2rem;
+    color:white;
+    border-radius: 10px;   
+    font-weight: bold;
 }
 
 footer{
@@ -72,4 +101,7 @@ footer{
 
 footer div{
     flex: 1;
+}
+#copyright{
+    text-align: right;
 }
