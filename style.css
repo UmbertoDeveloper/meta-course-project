@@ -1,18 +1,23 @@
-body {
-    background-color: #EDEFEE;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Cursive';
-    margin: 3rem 5%;
+
+header{
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-h1{
-    font-size: 3rem;
-    color: white;
+header > img{
+    margin: 0 auto;
+    display: block;
 }
 
-h2{
-    font-size: 2rem;
-
+nav{
+    background-color: #495E57;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
 }
+
 
 nav ul {
     list-style: none;
@@ -29,35 +34,27 @@ nav a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Cursive';
 }
 
-nav{
-    background-color: #495E57;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-}
 
 nav li {
     display: inline-block;
     margin: 0 10px;
 }
-header{
-    text-align: center;
-    margin-bottom: 2rem;
+
+
+body {
+    background-color: #EDEFEE;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Cursive';
+    margin: 3rem 5%;
 }
 
-header > img{
-    margin: 0 auto;
-    display: block;
+h1{
+    font-size: 3rem;
+    color: white;
 }
-#main_promotion_section article{
-    background-image: url('resources/photo-1547496502-affa22d38842.avif');
-    border-radius: 10px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
- 
+
+h2{
+    font-size: 2rem;
+
 }
 
 section{
@@ -67,6 +64,24 @@ section{
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
+
+article{
+    flex: 1;
+    padding:0.5rem 2rem;
+    color:white;
+    border-radius: 10px;   
+    font-weight: bold;
+}
+
+#main_promotion_article{
+    background-image: url('resources/photo-1547496502-affa22d38842.avif');
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+}
+
 
 #risotto_article{
     background-image: url('resources/risotto-al-nero-3092x1546.jpg');
@@ -87,13 +102,6 @@ section{
 
 }
 
-article{
-    flex: 1;
-    padding:0.5rem 2rem;
-    color:white;
-    border-radius: 10px;   
-    font-weight: bold;
-}
 
 footer{
     display: flex;  
