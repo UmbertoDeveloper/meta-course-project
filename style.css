@@ -1,17 +1,16 @@
-
-header{
+header {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-header > img{
+header>img {
     margin: 0 auto;
     display: block;
 }
 
-nav{
+nav {
     background-color: #495E57;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -25,7 +24,7 @@ nav ul {
     padding: 0;
 }
 
-nav a{
+nav a {
     font-size: larger;
     text-decoration: double;
     color: white;
@@ -47,28 +46,17 @@ body {
     margin: 3rem 5%;
 }
 
-h1{
+h1 {
     font-size: 3rem;
     color: white;
 }
 
-h2{
+h2 {
     font-size: 2rem;
 
 }
 
-
-.articles_section article{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    padding-right: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-
-}
-
-section{
+.articles_section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -76,32 +64,62 @@ section{
     margin-bottom: 1.5rem;
 }
 
-article{
+
+.articles_section article {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
     flex: 1;
-    padding:0.5rem 2rem;
-    color:white;
-    border-radius: 10px;   
+    padding-left: 2rem;
+    padding-right: 0rem;
+    color: white;
+    border-radius: 10px;
     font-weight: bold;
     background-color: #495E57;
+
 }
 
-#promotion_section > article{
+#promotion_article {
+    position: relative;
+    border-radius: 10px;
+}
+
+#promotion_section {
+    padding-bottom: 2rem;
+}
+
+#promotion_img_div {
     background-image: url('resources/photo-1547496502-affa22d38842.avif');
     border-radius: 10px;
+    height: 400px;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    filter: blur(6px);
+}
+
+#promotion_text_div {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    padding-left: 2rem;
+    padding-right: 0rem;
+    margin-right: 0rem;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 
-#risotto_img{
+#risotto_img {
     background-image: url('resources/risotto-al-nero-3092x1546.jpg');
-   
+
 }
 
-.article_div_img_right{
+.article_div_img_right {
     background-size: cover;
-    background-position: center;;
+    background-position: center;
     height: 100%;
     width: 200%;
     border-top-right-radius: 10px;
@@ -110,23 +128,24 @@ article{
     border-bottom-left-radius: 100%;
 }
 
-#fruit_salad_img{
+#fruit_salad_img {
     background-image: url('resources/pngtree-a-colorful-fruit-salad-with-slices-of-watermelon-strawberries-kiwi-and-image_2702404.jpg');
 }
 
-#tuscany_cousine_img{
+#tuscany_cousine_img {
     background-image: url('resources/Cucina_Toscana_Ribollita_mjoizj\ \(1\).jpg');
 
 }
 
 
-footer{
-    display: flex;  
+footer {
+    display: flex;
 }
 
-footer div{
+footer div {
     flex: 1;
 }
-#copyright{
+
+#copyright {
     text-align: right;
 }
