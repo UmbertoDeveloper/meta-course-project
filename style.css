@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 header {
     text-align: center;
     margin-bottom: 2rem;
@@ -18,20 +30,34 @@ nav {
 }
 
 
+
 nav ul {
     list-style: none;
     text-align: center;
     padding: 0;
+    padding: 0.5rem;
 }
+
 
 nav a {
     font-size: larger;
     text-decoration: double;
     color: white;
-    font-style: italic;
+    font-style: normal;
     font-weight: bolder;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Cursive';
 }
+
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 
 
 nav li {
@@ -49,13 +75,27 @@ body {
 h1 {
     font-size: 3rem;
     color: white;
+    margin-bottom: 1rem;
 }
 
 h2 {
+    margin-bottom: 0.5rem;
     font-size: 2rem;
 
 }
 
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+}
+
+
+a:hover{
+    color: grey;
+}
 
 
 .articles_section {
@@ -79,6 +119,8 @@ h2 {
 
 }
 
+
+
 #promotion_article {
     position: relative;
     border-radius: 10px;
@@ -97,20 +139,39 @@ h2 {
     filter: blur(6px);
 }
 
+
 #promotion_text_div {
     color: white;
     font-weight: bold;
     font-size: 20px;
     position: absolute;
-    top: 50%;
-    left: 34%;
+    top: 30%;
     padding-left: 2rem;
-    padding-right: 0rem;
-    margin-right: 0rem;
-    transform: translate(-50%, -50%);
     z-index: 1;
 }
 
+@media only screen and (max-width:500px) and (min-width:380px){ 
+    #promotion_text_div {
+        font-size: 16px;
+        left: -5%;
+        padding-left: 5rem;
+        padding-right: 3rem;
+    }
+    #promotion_title{
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 379px) { 
+    #promotion_text_div {
+        font-size: 12px;
+        left: -5%;
+    }
+    #promotion_title{
+        font-size: 1.5rem;
+    }
+}
 
 #risotto_img {
     background-image: url('resources/risotto-al-nero-3092x1546.jpg');
@@ -137,14 +198,12 @@ h2 {
 
 }
 
-
-footer {
-    display: flex;
+.article_div_text_left {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
 }
 
-footer div {
-    flex: 1;
-}
 
 #copyright {
     text-align: right;
